@@ -15,3 +15,10 @@ The base address for the live API server.
 Swagger API Documentation
 https://hrm-backend-task.onrender.com/api-docs
 The interactive testing playground for testing all authentication and attendance endpoints.
+
+
+GitHub Repository
+https://github.com/padhuv2003/HRM-BackEnd-Task
+Link to the source code.
+
+
