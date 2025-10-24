@@ -4,7 +4,7 @@ info:
   title: HRM Backend API
   version: '1.0'
 servers:
-  - url: http://localhost:4000
+  - url: https://hrm-backend-task.onrender.com
 paths:
   /api/auth/register:
     post:
@@ -107,3 +107,4 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT
+
