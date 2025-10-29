@@ -62,14 +62,17 @@ paths:
         '201': { description: Created }
   /api/employees/{id}:
     get:
-      summary: Get employee
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema: { type: string }
-      responses:
-        '200': { description: OK }
+    summary: Get employee
+    security:
+      - bearerAuth: []
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: string }
+    responses:
+      '200': { description: OK }
+
   /api/attendance/{employeeId}/checkin:
     post:
       summary: Employee check-in
@@ -118,6 +121,7 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT
+
 
 
 
